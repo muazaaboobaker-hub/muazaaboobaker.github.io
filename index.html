@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grazed Naturals — Halaal Tallow Skincare</title>
+  <meta name="description" content="Handcrafted, Halaal-certified tallow balm. Small-batch, science-backed and made from locally sourced ingredients. Nourish, soothe and hydrate naturally." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23D4AF37'/%3E%3Ctext x='50' y='60' text-anchor='middle' font-size='56' font-family='serif' fill='black'%3EG%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #0f0f0f;
+      --muted: #6b7280; /* gray-500 */
+      --gold: #d4af37;
+      --ink: #0b0b0c;
+      --card: #f8f8f7;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { width: min(1100px, 92vw); margin: 0 auto; }
+    .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: rgba(255,255,255,.7); border-bottom: 1px solid #eee; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: .9rem 0; }
+    .brand { display: flex; align-items: center; gap: .6rem; font-weight: 700; letter-spacing: .06em; }
+    .brand .dot { width: 10px; height: 10px; border-radius: 999px; background: var(--gold); display: inline-block; }
+    .nav a { padding: .5rem .7rem; border-radius: .6rem; }
+    .nav a:hover { background: #f1f1ef; }
+
+    /* Hero */
+    .hero { padding: 6rem 0 4rem; }
+    .hero-grid { display: grid; gap: 2rem; grid-template-columns: 1.1fr .9fr; align-items: center; }
+    .eyebrow { font-size: .8rem; letter-spacing: .2em; color: var(--muted); text-transform: uppercase; }
+    h1 { font-size: clamp(2rem, 3.6vw + 1rem, 3.5rem); line-height: 1.1; margin: .4rem 0 1rem; }
+    .lead { font-size: 1.125rem; color: #374151; max-width: 55ch; }
+    .cta-row { display: flex; gap: .8rem; margin-top: 1.5rem; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1.1rem; border-radius: .9rem; font-weight: 600; }
+    .btn.gold { background: var(--gold); color: #111; box-shadow: 0 6px 18px rgba(212,175,55,.22); }
+    .btn.ghost { border: 1px solid #e6e6e4; }
+
+    .jar-card { background: var(--card); border-radius: 1.4rem; padding: 1.2rem; box-shadow: 0 10px 30px rgba(0,0,0,.05); }
+    .jar { aspect-ratio: 1/1; background: transparent; border-radius: 1rem; display: grid; place-items: center; overflow: hidden; }
+    .jar img { width: 80%; filter: drop-shadow(0 10px 18px rgba(0,0,0,.15)); }
+
+    /* Sections */
+    section { padding: 4rem 0; }
+    h2 { font-size: clamp(1.6rem, 2.4vw + 1rem, 2.2rem); margin: 0 0 1rem; }
+    .grid-3 { display: grid; gap: 1.2rem; grid-template-columns: repeat(3, 1fr); }
+    .card { background: var(--card); border-radius: 1.2rem; padding: 1.2rem; }
+    .kicker { font-size: .82rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+
+    .badge { display:inline-flex; align-items:center; gap:.5rem; padding:.35rem .6rem; border-radius:.8rem; background:#111; color:#fff; font-size:.78rem; }
+    .badge .dot { width: .5rem; height: .5rem; background: var(--gold); border-radius: 50%; }
+
+    /* Halal badge */
+    .halal { display:inline-flex; align-items:center; gap:.5rem; font-weight:600; }
+    .halal svg { width: 22px; height: 22px; }
+
+    /* Product section */
+    .product { display: grid; gap: 2rem; grid-template-columns: .9fr 1.1fr; align-items: center; }
+    .feature-list { display: grid; gap: .6rem; }
+    .feature { display:flex; align-items:flex-start; gap:.7rem; }
+    .feature .icon { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); margin-top:.45rem; }
+
+    /* Footer */
+    footer { padding: 3rem 0; border-top: 1px solid #eee; color: #4b5563; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid, .product { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <a href="#top" aria-label="Grazed Naturals home">Grazed Naturals</a>
+      </div>
+      <nav>
+        <a href="#product">Product</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#faq">FAQ</a>
+        <a href="#order" class="btn gold" aria-label="Order on WhatsApp">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container hero">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Halaal • Small-batch • Science-backed</div>
+        <h1>Skin care as it was meant to be.</h1>
+        <p class="lead">Handcrafted, Halaal tallow balm made from locally sourced beef suet and blended with natural oils. Formulated by a qualified Chemical & Environmental Engineer to nourish, soothe and hydrate — simply and effectively.</p>
+        <div class="cta-row">
+          <a class="btn gold" href="#order">Order on WhatsApp</a>
+          <a class="btn ghost" href="#product">See ingredients</a>
+          <span class="badge" title="Halaal-certified sourcing"><span class="dot"></span> Halaal sourcing</span>
+        </div>
+        <div class="halal" style="margin-top:1rem;">
+          <!-- Simple Arabic halal sign -->
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="30" fill="none" stroke="#d4af37" stroke-width="2"/>
+            <path d="M22 40c6-8 3-20 3-20m7 20V20m10 20c0-6 3-9 6-10" stroke="#0b0b0c" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span>Halaal-conscious production</span>
+        </div>
+      </div>
+      <div class="jar-card" aria-label="Product preview">
+        <div class="jar">
+          <!-- Replace src with your transparent PNG of the jar -->
+          <img src="jar-transparent.png" alt="Grazed Naturals Tallow Balm — 50ml amber jar with black lid" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="product" class="container">
+    <div class="product">
+      <div>
+        <h2>Grazed Naturals Tallow Balm — 50&nbsp;ml</h2>
+        <p>Artisanally rendered beef tallow, blended with jojoba/almond oil for a soft, fast-absorbing finish. No parabens. No alcohol. No synthetic fragrance. Packaged in a reusable amber glass jar to protect freshness.</p>
+        <div class="feature-list" style="margin-top:.8rem;">
+          <div class="feature"><span class="icon" aria-hidden="true"></span><div><strong>Science meets tradition.</strong> Formulated by a qualified Chemical & Environmental Engineer.</div></div>
+          <div class="feature"><span class="icon" aria-hidden="true"></span><div><strong>Bioavailable lipids.</strong> Rich in skin-friendly fatty acids + vitamins A, D, E & K.</div></div>
+          <div class="feature"><span class="icon" aria-hidden="true"></span><div><strong>Small-batch.</strong> Hand rendered, locally sourced Halaal ingredients.</div></div>
+        </div>
+        <div class="cta-row" style="margin-top:1.2rem;">
+          <a class="btn gold" id="order" href="https://wa.me/" target="_blank" rel="noopener">Order via WhatsApp</a>
+          <a class="btn ghost" href="#faq">Read FAQ</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="kicker">Ingredients</div>
+        <p><strong>Simple & transparent:</strong> Beef tallow (Halaal, locally sourced), jojoba or sweet almond oil, vitamin&nbsp;E. Optional: gentle essential oils (unscented available).</p>
+        <div class="kicker" style="margin-top:1rem;">How to use</div>
+        <p>Warm a pea-sized amount between clean fingers and massage into dry or sensitive areas. A little goes a long way. Suitable for face & body.</p>
+        <div class="kicker" style="margin-top:1rem;">Caution</div>
+        <p>For external use only. Patch test before first use. Discontinue if irritation occurs. <em>Not intended to diagnose, treat, cure, or prevent any medical condition.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="container">
+    <h2>Why tallow?</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="kicker">Skin-like lipids</div>
+        <p>Tallow closely resembles the skin’s natural oils, helping it absorb efficiently and support the moisture barrier.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">Vitamin-rich</div>
+        <p>Naturally contains vitamins A, D, E & K along with stearic and oleic acids for supple, comfortable skin.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">Minimal & gentle</div>
+        <p>A short, readable ingredient list. No synthetic fragrance, parabens or alcohol — suitable for sensitive skin.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="container">
+    <h2>FAQ</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="kicker">Is it pregnancy-safe?</div>
+        <p>Our unscented balm uses minimal ingredients and is generally considered gentle; if unsure, consult your healthcare professional.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">What skin types?</div>
+        <p>Formulated for dry, sensitive or compromised skin barriers. Start with a small amount and adjust as needed.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">Shelf life</div>
+        <p>Best within 6–12 months. Store cool and dry. Natural oils may soften in warm weather — this won’t affect efficacy.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div style="display:flex; gap:1rem; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+      <div style="display:flex; align-items:center; gap:.6rem;">
+        <span class="dot" style="width:10px;height:10px;border-radius:50%;background:var(--gold);"></span>
+        <strong>Grazed Naturals</strong>
+      </div>
+      <div style="display:flex; gap:1rem; align-items:center;">
+        <a href="mailto:hello@grazednaturals.co" aria-label="Email">hello@grazednaturals.co</a>
+        <span aria-hidden="true">•</span>
+        <a href="https://instagram.com/grazednaturals" target="_blank" rel="noopener" aria-label="Instagram">@grazednaturals</a>
+      </div>
+    </div>
+    <p style="margin-top:1rem; font-size:.9rem;">© <span id="y"></span> Grazed Naturals. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if (el) { e.preventDefault(); el.scrollIntoView({behavior: 'smooth'}); }
+      });
+    });
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- JSON-LD Product Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Grazed Naturals Tallow Balm 50ml",
+    "description": "Handcrafted Halaal tallow balm blended with natural oils. Nourishes, soothes and hydrates. Formulated by a Chemical & Environmental Engineer.",
+    "brand": {"@type": "Brand", "name": "Grazed Naturals"},
+    "image": ["jar-transparent.png"],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "ZAR",
+      "availability": "https://schema.org/PreOrder",
+      "url": "https://wa.me/",
+      "price": "180"
+    }
+  }
+  </script>
+</body>
+</html>
